@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Modern Docoration and Paiting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@100;200;300;400;600;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="home-page.html"><img src="images/MPD logo.jpg" /> </a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="home-page.html">HOME</a></li>
+            <li><a href="industrial-page.html">INDUSTRIAL</a></li>
+            <li><a href="dmoestic-page.html">DOMESTIC</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contact-page.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1 class="Industrial-page-header">Contact us</h1>
+    </section>
+    <!----------contact us ------------->
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+44 07831380723</h5>
+              <p>Available 24/7</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>mpdltd245@gmail.com</h5>
+              <p>Email us for more</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="forum-handler.php" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter Your name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your Email Address"
+              required
+            />
+            <input
+              type="text"
+              name="service"
+              placeholder="Enter Your needed Services"
+              required
+            />
+            <textarea rows="8" name="message" placeholder="Message"></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!------- Footer -------->
+    <section class="footer">
+      <p>&#169;MPD-LTD all rights reserved</p>
+      <img src="images/MPD logo.jpg" alt="" />
+      <div class="icons">
+        <a href="tel:+4407831380723"><i class="fa fa-phone"></i></a>
+        <a href="contact-page.html"><i class="fa fa-envelope-o"></i></a>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"> Easy Tutorials</i></p>
+    </section>
+
+    <!------JavaScript for Toggle Menu ------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

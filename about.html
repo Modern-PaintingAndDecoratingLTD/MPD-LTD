@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Modern Docoration and Paiting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@100;200;300;400;600;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="home-page.html"><img src="images/MPD logo.jpg" /> </a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="home-page.html">HOME</a></li>
+            <li><a href="industrial-page.html">INDUSTRIAL</a></li>
+            <li><a href="dmoestic-page.html">DOMESTIC</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contact-page.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1 class="Industrial-page-header">About Us</h1>
+    </section>
+    <!------about us content--------->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We are Modern Painting and Decorating</h1>
+          <p>
+            We are MP&D LTD, a painting and decoration company. Although
+            recently created, each employee has a minimum of 10 years experience
+            in painting and decorating.
+          </p>
+          <p>
+            With the rapid pace of growth that we have secured quality of
+            performance, we have already been able to complete several
+            challenging, such as time and quality of the site, and record
+            clients such as Rolls Royce, Chemring Counter Measures Ltd, Grief,
+            Ferrybridge Power Station, and others in our portfolio.
+          </p>
+          <p>
+            The activity of the company extends throughout the territory of the
+            UK. The services we offer are accompanied by our professionalism and
+            excellent customer service.
+          </p>
+          <h1>Our Goal</h1>
+          <div>
+            <p>
+              Our goal at MP&D is to give you as clients reasonably priced,
+              fast, and most importantly, quality services. Always supports you
+              as a customer while having an individual approach, which aims at
+              your satisfaction with the final results.
+            </p>
+          </div>
+          <a href="contact-page.html" class="hero-btn red-btn"
+            >CONTACT FOR MORE</a
+          >
+        </div>
+        <div class="about-col">
+          <img src="images/about-us.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!------- Footer -------->
+    <section class="footer">
+      <p>&#169;MPD-LTD all rights reserved</p>
+      <img src="images/MPD logo.jpg" alt="" />
+      <div class="icons">
+        <a href="tel:+4407831380723"><i class="fa fa-phone"></i></a>
+        <a href="contact-page.html"><i class="fa fa-envelope-o"></i></a>
+      </div>
+      <p>Made with <i class="fa fa-heart-o"> Easy Tutorials</i></p>
+    </section>
+
+    <!------JavaScript for Toggle Menu ------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
